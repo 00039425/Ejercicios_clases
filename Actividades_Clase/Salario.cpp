@@ -87,6 +87,10 @@ int main()
             break;
 
         case 4:
+            cout << "ISSS: $" << isss << endl;
+            cout << "AFP: $" << afp << endl;
+            cout << "Salario - ISSS Y AFP: $" << salarioBruto - (isss + afp) << endl;
+            cout << "Renta: $" << renta << endl;
             cout << "Su salario neto mensual es de: $" << salarioNeto << endl;
             break;
 
