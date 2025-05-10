@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 
-    float num1, num2, resultado;
+    double num1, num2, resultado;
     int opcion;
 
     cout << "ingrese el primer numero" << endl;
