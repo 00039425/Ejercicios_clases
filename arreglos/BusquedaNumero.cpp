@@ -4,26 +4,32 @@ using namespace std;
 
 int main()
 {
-    int numeros[5] = {2, 4, 6, 10, 14};
-    int n = 0, resultado = 0;
+    // The array and variables to use are declared
+    int numbers[5] = {2, 4, 6, 10, 14};
+    int n = 0, result = 0;
 
-    cout << "Ingrese un numero par: ";
+    // A even number is asked from the user
+    cout << "Enter an even number: ";
     cin >> n;
+
+    // The array is checked to look for matches
     for (int i = 0; i <= 5; i++)
     {
-        if (numeros[i] == n)
+        // If a number in the array is the same as the number entered, that value is saved in 'result'
+        if (numbers[i] == n)
         {
-            resultado = n;
+            result = n;
         }
     }
 
-    if (resultado == n)
+    // Depending on the condition, one message or another is shown
+    if (result == n)
     {
-        cout << "El numero que usted digito (" << resultado << ") se encuentra dentro del arreglo" << endl;
+        cout << "The number you entered (" << result << ") is in the array" << endl;
     }
     else
     {
-        cout << "El numero que usted digito (" << n << ") no se encuentra dentro del arreglo" << endl;
+        cout << "The number you entered (" << n << ") is not in the array" << endl;
     }
     return 0;
 }
