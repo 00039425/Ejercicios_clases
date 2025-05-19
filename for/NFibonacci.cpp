@@ -11,7 +11,12 @@ int main()
     cout << "Enter the number of terms of the Fibonacci series you want to see: ";
     cin >> NFibonacci;
 
-    for (int i = 0; i < NFibonacci; i++)
+    //It is validated that the number entered by the user is greater than 0.
+    if(NFibonacci <= 0){
+        cout << "Enter a positive number. " << endl;
+    }
+    else{
+        for (int i = 0; i < NFibonacci; i++)
     {
         // The Fibonacci series is calculated starting with its first two values (1 and 1)
         cout << n1 << " ";
@@ -19,6 +24,8 @@ int main()
         n1 = n2;
         n2 = next;
     }
+    }
+    
 
     return 0;
 }
