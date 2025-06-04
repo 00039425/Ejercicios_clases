@@ -2,7 +2,8 @@
 
 using namespace std;
 
-int main(){
+int main()
+{
     // The values that the array will store are declared
     int numbers[5] = {1, 2, 3, 4, 5};
 
